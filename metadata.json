@@ -1,0 +1,6 @@
+{
+  "name": "Institute Management System",
+  "description": "An interactive management system with student-facing and administration views for tracking courses, curriculum details, and institutional profiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
