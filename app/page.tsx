@@ -1826,6 +1826,7 @@ export default function Page() {
                             <thead>
                               <tr className="bg-slate-50 border-b border-slate-100 text-xs font-bold tracking-wider text-slate-500 uppercase">
                                 <th className="p-4 pl-6">Candidate</th>
+                                <th className="p-4">Date Added</th>
                                 <th className="p-4">Contact</th>
                                 <th className="p-4">Course Interest</th>
                                 <th className="p-4">Status</th>
@@ -1839,6 +1840,9 @@ export default function Page() {
                                   <td className="p-4 pl-6">
                                     <div className="font-bold text-slate-800">{lead.name}</div>
                                     <div className="text-[10px] text-slate-400 font-medium">From: {lead.source}</div>
+                                  </td>
+                                  <td className="p-4">
+                                    <div className="text-slate-700 font-medium">{new Date(lead.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</div>
                                   </td>
                                   <td className="p-4">
                                     <div className="text-slate-700">{lead.phone}</div>
